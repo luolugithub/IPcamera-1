@@ -80,6 +80,7 @@ public class CustomHttpServer extends TinyHttpServer {
 		mDescriptionRequestHandler = new DescriptionRequestHandler();
 		addRequestHandler("/shadowinlife.sdp*", mDescriptionRequestHandler);
 		addRequestHandler("/request.json*", new CustomRequestHandler());
+		addRequestHandler("/spydroid.sdp*", mDescriptionRequestHandler);
 	}
 
 	@Override

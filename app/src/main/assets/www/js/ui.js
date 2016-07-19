@@ -264,9 +264,6 @@
 	         if (audioStream.getState()==='streaming') {
 		          videoPlugin.css('visibility','hidden'); 
 		          cover.html('').css('background','url("images/speaker.png") center no-repeat').show();
-	         } else if (audioStream.getState()==='idle') {
-		          videoPlugin.css('visibility','hidden'); 
-		          cover.html('').css('background','url("images/eye.png") center no-repeat').show();
 	         }
 	     }
 
@@ -444,9 +441,6 @@
             updatePhoneStatus(data);
             
         });
-
-	     // Translate the interface in the appropriate language
-	     $('h1,h2,h3,span,p,a,em').translate();
 
 	     $('.popup').each(function () {
 	         $(this).css({'top':($(window).height()-$(this).height())/2,'left':($(window).width()-$(this).width())/2});
