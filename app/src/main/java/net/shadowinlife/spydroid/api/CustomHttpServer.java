@@ -78,7 +78,7 @@ public class CustomHttpServer extends TinyHttpServer {
 	public void onCreate() {
 		super.onCreate();
 		mDescriptionRequestHandler = new DescriptionRequestHandler();
-		addRequestHandler("/spydroid.sdp*", mDescriptionRequestHandler);
+		addRequestHandler("/shadowinlife.sdp*", mDescriptionRequestHandler);
 		addRequestHandler("/request.json*", new CustomRequestHandler());
 	}
 
@@ -153,7 +153,7 @@ public class CustomHttpServer extends TinyHttpServer {
 
 	/** 
 	 * Allows to start streams (a session contains one or more streams) from the HTTP server by requesting 
-	 * this URL: http://ip/spydroid.sdp (the RTSP server is not needed here). 
+	 * this URL: http://ip/shadowinlife.sdp (the RTSP server is not needed here).
 	 **/
 	class DescriptionRequestHandler implements HttpRequestHandler {
 

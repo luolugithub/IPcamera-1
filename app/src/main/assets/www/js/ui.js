@@ -36,11 +36,11 @@
                 if (e!==false) done();
                 $.ajax({
                     type: 'GET', 
-                    url: 'spydroid.sdp?id='+(type==='video'?0:1)+'&'+req.uri, 
+                    url: 'shadowinlife.sdp?id='+(type==='video'?0:1)+'&'+req.uri,
                     success: function (e) {
                         setTimeout(function () {
                             state = "streaming";
-                            object.playlist.add('http://'+host+':'+port+'/spydroid.sdp?id='+(type==='video'?0:1)+'&'+req.uri,'',req.params);
+                            object.playlist.add('http://'+host+':'+port+'/shadowinlife.sdp?id='+(type==='video'?0:1)+'&'+req.uri,'',req.params);
 		                      object.playlist.playItem(0);
                             setTimeout(function () {
                                 done();
@@ -57,7 +57,7 @@
 	         stop: function () {
                 $.ajax({
                     type: 'GET', 
-                    url: 'spydroid.sdp?id='+(type==='video'?0:1)+'&stop', 
+                    url: 'shadowinlife.sdp?id='+(type==='video'?0:1)+'&stop',
                     success: function (e) {
                         //done(); ??
                     }, 
